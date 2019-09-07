@@ -13,7 +13,7 @@ switch(resultado) {
     
   }
   operacion = parseInt(operacion);
-  prompt(operacion + numero + numero2 = resultado)
+  prompt(resultado = operacion + numero + numero2)
 
 // while(numero <= 0 && numero2 <= 0){
 //     var resultado = operacion + numero + numero2
