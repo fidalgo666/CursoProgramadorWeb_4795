@@ -7,7 +7,7 @@ alert('HOLA CURSO')
   un mensaje en consola de varias lineas
 */
 
-// PRADCTICA DE VARIABLES:
+// PRACTICA DE VARIABLES:
 
 var a = 'texto amargo'
 alert (a);
