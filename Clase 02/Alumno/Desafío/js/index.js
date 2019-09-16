@@ -4,7 +4,7 @@ var age = prompt('Ingrese su edad')
 var message = 'Hola, '
 
 switch (gender) {
-    case: 'masculino':
+    case 'masculino':
     message = message + 'Sr. '
     break
     case 'femenino':
@@ -24,4 +24,4 @@ if (age >= 18) {
     message = message +'usted es menor de edad, puede ingresar'
 }
 
-console.log(message)
+alert(message)
