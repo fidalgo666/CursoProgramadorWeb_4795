@@ -1,0 +1,12 @@
+1# utilizar el maquetado del DESAFIO 01
+2# suscribirnos a los eventos de los controles que queremos validar
+-A- nombre es requerido
+-B- DNI tiene que ser un numero positivo y que no exista en la lista
+3# crear los handlers o funciones que nos van a permitir procecsar esas validaciones
+4# actualizar el estado del boton una vez validado el formulario
+5# crear un nuevo alumno, incluyendo
+-A- persistirlo en un array o lista y a su vez permitir esa lista en el LocalStorage y a su vez mostrarlo en pantalla
+6# debemos tener en cuenta al momento de la carga de la pagina, si la lista en el LocalStorage tiene 
+-A- alumnos cargados, se deben mostrar 
+7# para borrar un alumno, deberia buscar por DNI y borrarlo en caso de que exista.
+Para borrar un elemento de un array podemos utilizar el metodo SPLICE de array.
