@@ -78,6 +78,21 @@ var campoAgregoAlumnoBTN = document.getElementById('boton')
 campoAgregoAlumnoBTN.onclick = showMessage
 
 function showMessage(event){
-    var inputNode =  event.target
-    
-}
+ 
+    var liNode = document.createElement('li')
+    liNode.id = newStudent.dni
+    liNode.className = 'list-group-item'
+    liNode.innerHTML =
+      '<h1>' +
+      newStudent.getFullName() +
+      '</h1><h3>DNI:' +
+      newStudent.dni +
+      '</h3><p>E-mail:' +
+      newStudent.email +
+      '</p>'
+    return liNode
+  }
+
+  // Creo un nodo para probar y le paso el objeto estudiante
+  var studentNode = createStudentNode(student)
+  alert(studentNode)
