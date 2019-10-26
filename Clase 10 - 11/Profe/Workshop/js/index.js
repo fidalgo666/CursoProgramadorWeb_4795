@@ -52,7 +52,7 @@ var deleteStudentButtonNode = document.getElementById('deleteStudentButton')
 
 deleteStudentButtonNode.onclick = deleteStudent
 
-function validateDeleteDniField (event) {
+function validateDeleteDniField(event) {
   var inputNode = event.target
 
   var index = searchStudentIndexByDni(inputNode.value, studentsList)
@@ -66,7 +66,7 @@ function validateDeleteDniField (event) {
   }
 }
 
-function deleteStudent () {
+function deleteStudent() {
   var deleteDniValue = deleteDniNode.value
 
   var index = searchStudentIndexByDni(deleteDniValue, studentsList)
@@ -88,7 +88,7 @@ function deleteStudent () {
   console.log('Fuente de verdad luego de eliminar ', studentsList)
 }
 
-function addStudent () {
+function addStudent() {
   var firstNameValue = firstNameNode.value
   var dniValue = dniNode.value
   var lastNameValue = lastNameNode.value
@@ -124,7 +124,7 @@ function addStudent () {
 
 // Funciones auxiliares
 
-function searchStudentIndexByDni (dni, studentsList) {
+function searchStudentIndexByDni(dni, studentsList) {
   var student
 
   for (var i = 0; i < studentsList.length; i++) {
@@ -137,7 +137,7 @@ function searchStudentIndexByDni (dni, studentsList) {
   return -1
 }
 
-function validateDniField (event) {
+function validateDniField(event) {
   var inputNode = event.target
 
   var parsedValue = parseInt(inputNode.value, 10)
@@ -154,7 +154,7 @@ function validateDniField (event) {
   validateSubmitButton()
 }
 
-function validateRequiredField (event) {
+function validateRequiredField(event) {
   var inputNode = event.target
 
   if (!inputNode.value) {
@@ -168,7 +168,7 @@ function validateRequiredField (event) {
   validateSubmitButton()
 }
 
-function validateEmailField (event) {
+function validateEmailField(event) {
   var inputNode = event.target
 
   if (
@@ -186,7 +186,7 @@ function validateEmailField (event) {
   validateSubmitButton()
 }
 
-function validateSubmitButton () {
+function validateSubmitButton() {
   var addStudentButtonNode = document.getElementById('addStudentButton')
   var inputFields = document.getElementsByClassName('is-valid')
 
@@ -197,7 +197,7 @@ function validateSubmitButton () {
   }
 }
 
-function createStudentNode (newStudent) {
+function createStudentNode(newStudent) {
   // Creo el nodo li
   var liNode = document.createElement('li')
 
@@ -224,7 +224,7 @@ function createStudentNode (newStudent) {
   return liNode
 }
 
-function setLocalList (key, list) {
+function setLocalList(key, list) {
   // Verifico los parámetros recibidos
   if (typeof key === 'string' && Array.isArray(list)) {
     // Convierto a JSON el array
@@ -234,7 +234,7 @@ function setLocalList (key, list) {
   }
 }
 
-function getLocalList (key) {
+function getLocalList(key) {
   // Valido que reciba un string
   if (typeof key === 'string') {
     // Trato de recuperar la lista del localStorage
@@ -256,7 +256,7 @@ var searchStudentButtonNode = document.getElementById('searchStudentButton')
 
 searchStudentButtonNode.onclick = searchStudent
 
-function searchStudent (event) {
+function searchStudent(event) {
   var searchTextNode = document.getElementById('searchText')
   var searchListNode = document.getElementById('searchList')
 
@@ -275,7 +275,7 @@ function searchStudent (event) {
 
 // Buscar estudiante con coincidencias parciales
 
-function searchStudentIndexByText (text, studentsList) {
+function searchStudentIndexByText(text, studentsList) {
   var student
 
   for (var i = 0; i < studentsList.length; i++) {
@@ -291,7 +291,7 @@ function searchStudentIndexByText (text, studentsList) {
   return -1
 }
 
-function includesText (text, baseText) {
+function includesText(text, baseText) {
   // Valido que ambos parámetros sean string
   if (typeof text === 'string' && typeof baseText === 'string') {
     // Verifico si el primer parámetro se encuentra dentro del segundo
