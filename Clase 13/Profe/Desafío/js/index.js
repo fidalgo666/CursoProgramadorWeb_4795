@@ -1,4 +1,4 @@
-// Espero a que el HTML este completamente cargado
+// la proxima linea de coidogo es para esperar a que el HTML este completamente cargado
 $(document).ready(function () {
   // Busco los nodos que voy a utilizar
   var firstNameInputNode = $('#firstName')
@@ -93,7 +93,7 @@ $(document).ready(function () {
 
   /**
  * validateButton habilita el botón de submit si existen
- * al menos cuatro nodos con la clase is-valid
+ * al menos tres nodos con la clase is-valid
  */
   function validateButton () {
     var validInputNodes = $('.is-valid')
