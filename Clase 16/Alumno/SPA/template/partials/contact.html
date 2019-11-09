@@ -5,19 +5,19 @@
         <div class="form-row">
       <div class="form-group col-md-6">
         <label for="firstName" style="width: 100%">
-          <input type="text" class="form-control" id="firstName" placeholder="Nombre">
+          <input type="text" class="form-control" id="firstName contactButton" placeholder="Nombre">
         </label>
       </div>
       <div class="form-group col-md-6">
         <label for="email" style="width: 100%">
-          <input type="email" class="form-control" id="email" placeholder="Email">
+          <input type="email" class="form-control" id="email contactButton" placeholder="Email">
         </label>
       </div>
     </div>
     <div class="form-row">
       <div class="form-group col-md-12">
         <label for="comments" style="width: 100%">
-          <textarea  class="form-control" id="comments" placeholder="Comentarios" rows="3"></textarea>
+          <textarea  class="form-control" id="comments contactButton" placeholder="Comentarios" rows="3"></textarea>
         </label>
       </div>
     </div>
@@ -25,3 +25,24 @@
     </form>
 
 </div>
+
+<script type="text/javascript">
+  function validateText(id) {
+      if ($("#" + id).val() == null || $("#" + id).val() == "") {
+          var div = $("#" + id).closest("div");
+          div.removeClass("has-success");
+          $("#glypcn" + id).remove();
+          div.addClass("has-error has-feedback");
+          div.append('<span id="glypcn' + id
+             + '" class="glyphicon glyphicon-remove form-control-feedback"></span>');
+          return false;
+      } else {
+          var div = $("#" + id).closest("div");
+          div.removeClass("has-error");
+          $("#glypcn" + id).remove();
+          div.addClass("has-success has-feedback");
+          div.append('<span id="glypcn' + id
+                 + '" class="glyphicon glyphicon-ok form-control-feedback"></span>');
+          return true;
+      }
+  }
