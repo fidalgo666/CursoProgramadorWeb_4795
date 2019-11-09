@@ -4,7 +4,11 @@ var webpack = require('webpack')
 var path = require('path')
 
 module.exports = {
+<<<<<<< HEAD
   entry: [ './src/js/index.js' ],
+=======
+  entry: ['./src/index.js'],
+>>>>>>> ee853b8e9b81555893392142982d3e2ca54d9f9f
   output: {
     filename: 'js/index.js',
     path: path.resolve(__dirname, 'public')
@@ -21,7 +25,11 @@ module.exports = {
       },
       {
         test: /\.css$/,
+<<<<<<< HEAD
         use: [ 'style-loader', 'css-loader' ]
+=======
+        use: ['style-loader', 'css-loader']
+>>>>>>> ee853b8e9b81555893392142982d3e2ca54d9f9f
       },
       {
         test: /\.(png|jpg|gif|svg|ico|jpeg)$/,

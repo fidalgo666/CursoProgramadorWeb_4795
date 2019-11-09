@@ -8,7 +8,12 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "crossroads": "^0.12.2",
+<<<<<<< HEAD
     "jquery": "^3.4.1"
+=======
+    "jquery": "^3.4.1",
+    "popper.js": "^1.14.3"
+>>>>>>> ee853b8e9b81555893392142982d3e2ca54d9f9f
   },
   "devDependencies": {
     "copy-webpack-plugin": "^5.0.4",
